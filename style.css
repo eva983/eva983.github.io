@@ -1,0 +1,335 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  text-decoration: none;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: #1c1c1c;
+  color: rgb(255, 255, 255);
+
+  text-decoration: none;
+  font-family: "Poppins";
+}
+.lamp {
+  background: transparent;
+  border: none;
+}
+.lamp img {
+  width: 45px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+#header {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 8rem;
+  padding: 1rem 1.3rem 5rem;
+}
+.nav-logo {
+  padding: 0 100px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 30px;
+}
+.head-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 0px;
+  font-size: 1.5rem;
+}
+.head-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0 100px;
+}
+
+.head-list li {
+  flex: 0 0 auto;
+  margin-left: 1rem;
+  list-style: none;
+}
+.head-list li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.head-list li a:hover,
+.head-list li a:active {
+  color: rgb(160, 123, 163);
+}
+
+#menu-icon {
+  font-size: 3.6rem;
+  color: white;
+  display: none;
+}
+
+.hero-section {
+  display: flex;
+  justify-content: center;
+  padding: 1.3rem;
+  max-width: 100vw;
+  max-height: 100vh;
+  margin-bottom: 100px;
+}
+.ls-content {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 10px 0 100px;
+  position: relative;
+}
+.description {
+  position: absolute;
+  z-index: 1;
+}
+#title h3 {
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+.subtitle {
+  font-size: 1.6rem;
+  padding: 1rem 0;
+}
+.moving-text {
+  border-right: 0.1em solid white;
+  white-space: nowrap;
+  margin: 0 auto;
+  color: pink;
+  overflow: hidden;
+  animation: typing 2s steps(16, end), blink-caret 0.75s step-end infinite;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(255, 255, 255);
+  }
+}
+.btn {
+  display: inline-flex; /* Use flex display */
+  align-items: center; /* Vertically center items */
+  padding: 1rem 2.8rem;
+  /*background: #9d69a3;box-shadow: 0 0 1rem (lightblue)transition: 0.3s;
+};*/
+  font-size: 1.6rem;
+
+  color: white;
+  letter-spacing: 0.1rem;
+  border-radius: 20px;
+  border: none;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 0 20px #eee;*/
+  box-shadow: 1px 1px 10px rgb(210 122 221);
+
+  border-radius: 10px;
+  background-image: linear-gradient(
+    to right,
+    #895cf2 0%,
+    #ffabf4 51%,
+    #895cf2 100%
+  );
+}
+.btn:hover {
+  background-position: right center; /* change the direction of the change here */
+}
+
+.btn-text {
+  /*margin-right: 10px;  Adjust the margin as needed */
+}
+
+.dl-icon {
+  vertical-align: middle;
+  color: white; /* Vertically align the icon */
+}
+
+.rs-content {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  padding: 0 100px 0 10px;
+}
+
+.hero-img {
+  width: 100%;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  /* margin: auto; */
+  position: relative;
+}
+
+.shape {
+  border-radius: 26% 74% 68% 32% / 46% 55% 45% 54%;
+  background: linear-gradient(
+    196deg,
+    rgba(196, 10, 159, 1) 40%,
+    rgba(84, 29, 170, 1) 74%
+  );
+  background-image: url(woman.png);
+  width: 400px;
+  height: 400px;
+  z-index: 0;
+  transition: border-radius 1s ease-out;
+  animation: morph 5s ease-in-out infinite both alternate;
+  overflow: hidden;
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 40% 60% 60% 40% / 60% 30% 70% 40%;
+  }
+  100% {
+    border-radius: 26% 74% 68% 32% / 46% 55% 45% 54%;
+  }
+}
+
+.socials {
+  display: flex;
+  /* flex-direction: row; */
+  /* justify-content: center; */
+  column-gap: 1.5rem;
+  align-items: center;
+}
+
+.sns-img {
+  border: 2px solid red;
+  border-radius: 50%;
+  width: 30px;
+}
+
+/* ABOUT AND SKILLS SECTION CSS*/
+
+.about {
+  display: flex;
+  justify-content: center;
+  padding: 1.3rem;
+  max-width: 100vw;
+  max-height: 100vh;
+  margin-bottom: 100px;
+}
+
+#contact {
+  display: flex;
+  justify-content: center;
+  padding: 1.3rem;
+  max-width: 100vw;
+  max-height: 100vh;
+  margin-bottom: 100px;
+  justify-content: center;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 15px;
+  background-color: #2f2e2e69;
+  padding: 1.75rem;
+  width: 400px;
+  border-radius: 10px;
+}
+
+.form-control {
+  height: 3rem;
+  width: 100% !important;
+  border-radius: 0.125rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+}
+
+.sub-form {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-content: right;
+  width: 100%;
+}
+
+/* BREAKPOINT */
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 991px) {
+}
+
+@media (max-width: 768px) {
+  #menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+  #header {
+    padding: 0;
+    height: 5rem;
+  }
+  .rs-content {
+    display: none;
+  }
+  #navbar {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    padding: 0;
+    background-color: grey;
+    border-top: 0.1rem solid white;
+    display: none;
+    z-index: 1;
+    text-align: right;
+  }
+  .navbar .active {
+    display: block !important;
+  }
+  .head-list {
+    display: block;
+    font-size: 2rem;
+    margin: auto;
+    padding: 0;
+  }
+  .head-list li {
+    padding: 1rem;
+    margin-left: 0;
+  }
+  .head-list li:hover,
+  .head-list li:hover a {
+    background-color: white;
+    color: rgb(160, 123, 163);
+  }
+}
