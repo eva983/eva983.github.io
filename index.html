@@ -12,7 +12,7 @@
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 </head>
 
-<body class="light-mode">
+<body>
 
     <header id="header">
         <div class="head-container">
@@ -24,14 +24,12 @@
                 </a>
                 <div class="socials">
                     <a class="sns" href="github.com">
-                        <img class="sns-img" src="github-mark-white.png" alt="github">
+                        <img class="sns-img" src="github.png" alt="github">
                     </a>
                     <a class="sns" href="github.com">
-                        <img class="sns-img" src="github-mark-white.png" alt="github">
+                        <img class="sns-img" src="linkedin.png" alt="github">
                     </a>
-                    <a class="sns" href="github.com">
-                        <img class="sns-img" src="github-mark-white.png" alt="github">
-                    </a>
+                   
                 </div>
             </div>
 
@@ -45,18 +43,19 @@
                     <li><a href="#contact">.contact()</a></li>
 
                 </ul>
-                <button class="lamp" onclick="myFunction()">
-                    <img src="lamp.png"> </button>
+               
             </nav>
-        </div>
+        </div> 
+        <button class="lamp" onclick="myFunction()">
+                    <img src="lamp.png"> </button>
     </header>
 
 
-    <div class="hero-section">
+    <section class="hero-section">
 
         <div class="ls-content">
             <div id="title">
-                <h3>eva. junior <div class="moving-text">web developer&nbsp;</div></span></h3>
+                <h1>eva. <div class="moving-text">web developer&nbsp;</div></span></h1>
             </div>
             <div class="subtitle">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur adipisci accusantium possimus
@@ -64,15 +63,16 @@
                 nesciunt pariatur consectetur error assumenda dignissimos?
             </div>
             <a href="#" class="btn">
-                <span class="btn-text">Download CV</span> 
-                <iconify-icon icon="line-md:download-loop" class="dl-icon"></iconify-icon>
+                <iconify-icon icon="line-md:download-loop" class="icon"></iconify-icon>
+
+                <span class="btn-text">Download CV</span>
             </a>
-            
-            
-            
-            
-            
-                
+
+
+
+
+
+
         </div>
         <div class="rs-content">
             <div class="hero-img">
@@ -87,41 +87,48 @@
         </div>
 
 
-    </div>
+    </section>
 
-    <div class="about" id="about">
-        <h2>Education</h2>
-        <ul>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-        </ul>
+    <section id="about">
+        <h2>Education & Skills</h2>
+        <div class="education-container">
+            <img class="edu-img" alt="university cap image" src="uni_cap.png">
+            <div class="sub-edu">Graduated from the Computer Science department
+                <br>of the Athens University of Economics and Business in 2022.
+            </div>
+        </div> 
+        <div class="education-container right">
 
-    </div>
-    <div id="contact">
-        
-<form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+            <div class="sub-work">Working as a web developer<br> & website administator.</div>
+            <img class="work-img" alt="working laptop image" src="work.png">
+        </div>
 
-    <input type="hidden" name="access_key" value="df5df245-b760-465f-8f59-f53abaa77d98">
+       
 
-    <input type="text" name="name" required placeholder="your name" class="form-control">
-    <input type="email" name="email" required placeholder="e-mail" class="form-control">
-    <textarea name="message" required placeholder="tell me something" class="form-control msg" ></textarea>
-    <div class="sub-form">
-    <div class="h-captcha" data-captcha="true"></div>
-    <button type="submit" class="btn contact-btn">Submit Form</button></div>
+    </section>
 
-</form>
+    <section id="contact">
 
-<script src="https://web3forms.com/client/script.js" async defer></script>
-    </div>
+        <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+
+            <input type="hidden" name="access_key" value="df5df245-b760-465f-8f59-f53abaa77d98">
+
+            <input type="text" name="name" required placeholder="your name" class="form-control">
+            <input type="email" name="email" required placeholder="e-mail" class="form-control">
+            <textarea name="message" required placeholder="tell me something" class="form-control msg"></textarea>
+            <div class="sub-form">
+                <div class="h-captcha" data-captcha="true"></div>
+                <button type="submit" class="btn contact-btn btn-text">
+                    <img src="message.png" class="icon mdg" />
+                    <span class="btn-text"> Submit</span>
+                   
+                </button>
+            </div>
+
+        </form>
+
+        <script src="https://web3forms.com/client/script.js" async defer></script>
+    </section>
 
 
     <script src="script.js"></script>
