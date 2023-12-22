@@ -29,33 +29,32 @@
                     <a class="sns" href="github.com">
                         <img class="sns-img" src="linkedin.png" alt="github">
                     </a>
-                   
+
                 </div>
             </div>
 
             <iconify-icon icon="bx:menu" id="menu-icon" style="color: white;"></iconify-icon>
+            <iconify-icon icon="icon-park:close" id="close-icon" style="color: white;"></iconify-icon>
 
             <nav id="navbar" class="navbar">
                 <ul class="head-list">
-                    <li><a href="#" class="">home</a></li>
-                    <li><a href="#about">.about()</a></li>
-                    <li><a href="#projects">.projects()</a></li>
-                    <li><a href="#contact">.contact()</a></li>
+                    <li><a class="nav-btn" href="#" class="">home</a></li>
+                    <li><a class="nav-btn" href="#about">.about()</a></li>
+                    <li><a class="nav-btn" href="#projects">.projects()</a></li>
+                    <li><a class="nav-btn" href="#contact">.contact()</a></li>
 
                 </ul>
-               
-            </nav>
-        </div> 
-        <button class="lamp" onclick="myFunction()">
+                <button class="lamp" onclick="myFunction()">
                     <img src="lamp.png"> </button>
+            </nav>
+        </div>
+
     </header>
 
 
-    <section class="hero-section">
-
-        <div class="ls-content">
-            <div id="title">
-                <h1>eva. <div class="moving-text">web developer&nbsp;</div></span></h1>
+    <section class="section-cont" id="hero">
+        <div class="left-s-content flex-column">
+            <div id="title"><h1 class="flex-row">eva.&nbsp;<p class="moving-text">web developer&nbsp;</p></h1>
             </div>
             <div class="subtitle">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur adipisci accusantium possimus
@@ -74,7 +73,7 @@
 
 
         </div>
-        <div class="rs-content">
+        <div class="right-s-content ">
             <div class="hero-img">
                 <div class="shape">
                 </div>
@@ -86,28 +85,88 @@
 
         </div>
 
-
     </section>
 
-    <section id="about">
-        <h2>Education & Skills</h2>
-        <div class="education-container">
-            <img class="edu-img" alt="university cap image" src="uni_cap.png">
-            <div class="sub-edu">Graduated from the Computer Science department
-                <br>of the Athens University of Economics and Business in 2022.
-            </div>
-        </div> 
-        <div class="education-container right">
 
-            <div class="sub-work">Working as a web developer<br> & website administator.</div>
-            <img class="work-img" alt="working laptop image" src="work.png">
+    <section class="section-cont flex-column">
+      <h2>Education & Skills</h2>
+      <div id="about" class="flex-row mobile-row">
+      <div class="left-s-content flex-column">
+        <img class="edu-img" alt="university cap image" src="uni_cap.png">
+
+            <div class="sub-edu">Graduated from the Computer Science department
+                of the Athens University of Economics and Business in 2022.
+            </div>
+            <div class="work-row flex-row">
+            <div class="sub-work">Working as a front-end web developer<br> & website administator.</div>
+                    <img class="work-img" alt="working laptop image" src="work.png">
+                </div>
+      </div>
+      <div class="right-s-content flex-column">
+        <div class="flex-row skills">
+            <img class="skill-icon" src="html-5.png" alt="html" title="html">
+            <img class="skill-icon" src="css-3.png" alt="css" title="css">
+            <img class="skill-icon" src="js.png" alt="javascript" title="javascript">
+            <img class="skill-icon" src="git.png" alt="git" title="git">
+            <img class="skill-icon" src="wordpress-logo.png" alt="wordpress" title="wordpress">
+
+        </div>
+        <div class="flex-row skills">
+            <img class="skill-icon" src="adobe-photoshop.png" alt="adobe-photoshop" title="adobe-photoshop">
+            <img class="skill-icon" src="figma.png" alt="figma" title="figma">
+
+        </div>
+        </div>
+    </div>
+    </section>
+
+
+    <!-- <section id="about">
+        <h2>Education & Skills</h2>
+        <div class="about-container">
+            <div class="col">
+                <div class="education-container">
+                    <img class="edu-img" alt="university cap image" src="uni_cap.png">
+                    <div class="sub-edu">Graduated from the Computer Science department
+                        of the Athens University of Economics and Business in 2022.
+                    </div>
+                </div>
+                <div class="education-container right">
+
+                    <div class="sub-work">Working as a front-end web developer<br> & website administator.</div>
+                    <img class="work-img" alt="working laptop image" src="work.png">
+                </div>
+            </div>
+            <div class="skills col">
+                <div class="skill-row">
+                    <img class="skill-icon" src="html-5.png" alt="html" title="html">
+                    <img class="skill-icon" src="css-3.png" alt="css" title="css">
+                    <img class="skill-icon" src="js.png" alt="javascript" title="javascript">
+                    <img class="skill-icon" src="git.png" alt="git" title="git">
+                    <img class="skill-icon" src="wordpress-logo.png" alt="wordpress" title="wordpress">
+
+                </div>
+                <div class="skill-row">
+                    <img class="skill-icon" src="adobe-photoshop.png" alt="adobe-photoshop" title="adobe-photoshop">
+                    <img class="skill-icon" src="figma.png" alt="figma" title="figma">
+
+                </div>
+                 <div class="skill-row">
+                <img class="skill-icon" src="adobe-photoshop.png" alt="adobe-photoshop"> 
+                <img class="skill-icon" src="wordpress-logo.png"> 
+                <img class="skill-icon" src="figma.png"> 
+
+            </div> 
+            </div>
         </div>
 
-       
 
-    </section>
 
-    <section id="contact">
+    </section> -->
+
+    <section class="section-cont" id="contact">
+        <h2><img src="message.png" class="icon mdg" />Contact Me
+        </h2>
 
         <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
 
@@ -119,9 +178,8 @@
             <div class="sub-form">
                 <div class="h-captcha" data-captcha="true"></div>
                 <button type="submit" class="btn contact-btn btn-text">
-                    <img src="message.png" class="icon mdg" />
                     <span class="btn-text"> Submit</span>
-                   
+
                 </button>
             </div>
 
@@ -133,5 +191,5 @@
 
     <script src="script.js"></script>
 </body>
-
 </html>
+
