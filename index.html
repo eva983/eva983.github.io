@@ -16,7 +16,7 @@
 
 <body>
 
-    <header id="header">
+    <!-- <header id="header">
         <div class="head-container">
             <div class="nav-logo">
 
@@ -43,13 +43,57 @@
                     <li><a class="nav-btn" href="#contact">.contact()</a></li>
 
                 </ul>
-                <!-- <button class="lamp" onclick="myFunction()">
-                    <img src="lamp.png"> </button> -->
+            </nav>
+            <nav id="navbar-mobile" class="navbar">
+                <ul class="head-list">
+                    <li><a class="nav-btn" href="#about">.about()</a></li>
+                    <li><a class="nav-btn" href="#projects">.projects()</a></li>
+                    <li><a class="nav-btn" href="#contact">.contact()</a></li>
+
+                </ul>
+              
             </nav>
         </div>
 
-    </header>
+    </header> -->
+    <div class="navbar">
+        <div class="left">
+            <div class="logo-container">
+                <a href="#" class="logo"><img src="mylogo.png"></a>
 
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <iconify-icon icon="bx:menu" id="menu-icon" style="color: white;"></iconify-icon>
+
+                </div>
+            </div>
+
+            <div class="social-icons">
+                <a class="sns" href="github.com" target="_blank">
+                    <img class="sns-img" src="github.png" alt="github">
+                </a> <a class="sns" href="github.com" target="_blank">
+                    <img class="sns-img" src="linkedin.png" alt="github">
+                </a>
+            </div>
+        </div>
+
+        <ul class="nav-links">
+            <li><a class="nav-btn" href="#about" onclick="closeMenu()">.about()</a></li>
+            <li><a class="nav-btn" href="#projects" onclick="closeMenu()">.projects()</a></li>
+            <li><a class="nav-btn" href="#contact" onclick="closeMenu()">.contact()</a></li>
+
+
+            <li class="mobile social-icons"> <a class="sns" href="github.com" target="_blank">
+                    <img class="sns-img" src="github.png" alt="github">
+                </a>
+            </li>
+            <li class="mobile social-icons"><a class="sns" href="github.com" target="_blank">
+                    <img class="sns-img" src="linkedin.png" alt="github">
+                </a>
+            </li>
+        </ul>
+
+
+    </div>
 
     <section class="section-cont" id="hero">
         <div class="content">
@@ -87,26 +131,7 @@
                     optio, nostrum dolor suscipit in quas minima reprehenderit sint. Optio nobis quia minima illum quas!
                 </div>
             </div>
-            <!-- 
-            <div class="column">
-                <div class="table-row">
-                  <div class="row left-r">
-                    <img class="about-icon" alt="university cap image" src="uni_cap.png">
-                    <h3>Education</h3>
-
-                    <p>Graduated from the Computer Science department
-                        of the Athens University of Economics and Business in 2022.</p>
-                  </div>
-                  <div class="row right-r">
-                    <img class="about-icon" alt="working laptop image" src="work.png">
-                    <h3>Work Experience</h3>
-
-                    <p>Graduated from the Computer Science department of the Athens University of Economics and Business in 2022.</p>
-
-
-                  </div>
-                </div>
-            </div> -->
+   
         </div>
 
     </section>
@@ -124,6 +149,7 @@
                             architecto illum saepe praesentium doloremque veniam quas minima eaque dolore, delectus unde
                             dolorem error excepturi commodi ipsa ipsam mollitia.</p>
                     </div>
+                    <hr>
                     <div class="row right-r">
                         <img class="about-icon" alt="working laptop image" src="work.png">
                         <h3>Work Experience</h3>
@@ -148,6 +174,8 @@
                     <div class="row skills-r">
                         <i class="devicon-jquery-plain-wordmark"></i>
                         <i class="devicon-bootstrap-plain-wordmark"></i>
+                        <i class="devicons devicons-responsive"></i>
+                        <span aria-hidden="true" class="fas fa-universal-access" title="Accessibility"></span>
                     </div>
                     <div class="row skills-r">
                         <i class="devicon-git-plain-wordmark"></i>
@@ -160,26 +188,23 @@
         </div>
     </section>
 
-    <section class="section-cont" id="projects">
+    <!-- <section class="section-cont" id="projects">
         <div class="content">
           <div class="column">
             <div class="row">
                 <div class="box">1</div>
                 <div class="box"></div>
-                <table><tbody><tr><td>&nbsp;</td><td>Συνολικό Ποντάρισμα</td><td>Free Spins</td></tr><tr><td>1<sup>ο</sup> Επίπεδο</td><td>10 ευρώ</td><td>10</td></tr><tr><td>2<sup>ο</sup> Επίπεδο</td><td>50 ευρώ</td><td>40</td></tr><tr><td>3<sup>ο</sup> Επίπεδο</td><td>150 ευρώ</td><td>100</td></tr><tr><td>4<sup>ο</sup> Επίπεδο</td><td>300 ευρώ</td><td>150</td></tr></tbody></table>
-                <table><tbody><tr><td>&nbsp;</td><td>Συνολικό Ποντάρισμα</td><td>Free Spins</td></tr><tr><td>1<sup>ο</sup> Επίπεδο</td><td>10 ευρώ</td><td>10</td></tr><tr><td>2<sup>ο</sup> Επίπεδο</td><td>50 ευρώ</td><td>40</td></tr><tr><td>3<sup>ο</sup> Επίπεδο</td><td>150 ευρώ</td><td>100</td></tr><tr><td>4<sup>ο</sup> Επίπεδο</td><td>300 ευρώ</td><td>150</td></tr></tbody></table>
-            </div>
+                </div>
             <div class="row">
             <div class="box">2</div>
             <div class="box">3</div>
             </div>
           </div>
         </div>
-    </section>
+    </section> -->
 
 
-
-    <!-- <section class="section-cont" id="contact">
+<!-- <section class="section-cont" id="contact">
         <h2><img src="message.png" class="icon mdg" />Contact Me
         </h2>
 
@@ -202,13 +227,14 @@
 
         <script src="https://web3forms.com/client/script.js" async defer></script>
     </section> -->
-    <footer>
+    <!-- <footer>
         Code & Design by Me<br>
         Made with <br>
         HTML, CSS3, javascript<br>
         hosted on netflify
 
-    </footer>
+    </footer> -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 
