@@ -13,6 +13,10 @@ body {
   text-decoration: none;
   font-family: "Poppins";
 }
+.styled-table {
+  color: red;
+  border:5px solid black;
+}
 .flex-row{
   display: flex;
   flex-direction: row;

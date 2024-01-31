@@ -4,7 +4,11 @@
 //     console.log("ok");
 //   }
 
-  
+
+// Iterate through the NodeList and add the 'styled-table' class to each table
+document.querySelectorAll('table').forEach(function(table) {
+  table.classList.add('styled-table');
+});  
   let menuIcon=document.querySelector('#menu-icon');
   let closeIcon=document.querySelector('#close-icon');
   let navbar=document.querySelector('#navbar');
