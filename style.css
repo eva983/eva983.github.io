@@ -332,9 +332,11 @@ background-color:#9866F2;
     width: 180px;
   }
 #contact {
+  display: flex;
   flex-direction: column;
   align-items: center;
   row-gap: 10px;
+
 }
 
 #contact-form {

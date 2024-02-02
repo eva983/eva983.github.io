@@ -240,32 +240,6 @@ h3 {
   font-size: 1.6rem;
   padding: 1rem 0;
 }
-/* 
-  .moving-text {
-    border-right: 0.1em solid white;
-    white-space: nowrap;
-    margin: 0 auto;
-    color: pink;
-    overflow: hidden;
-    animation: typing 2s steps(16, end), blink-caret 0.75s step-end infinite;
-  } */
-/* @keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
-  }
-  @keyframes blink-caret {
-    from,
-    to {
-      border-color: transparent;
-    }
-    50% {
-      border-color: rgb(255, 255, 255);
-    }
-  } */
 
 .hero-img {
   width: 100%;
@@ -377,6 +351,47 @@ i {
 #navbar-mobile {
   display: none;
 }
+.cont-div{
+  width: 50%;
+}
+#contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  row-gap: 10px;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 15px;
+  background-color: #a3a3a330;
+  padding: 1.75rem;
+  width: 500px;
+  border-radius: 10px;
+}
+
+.form-control {
+  height: 3rem;
+  width: 95% !important;
+  border-radius: 0.125rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+}
+
+.sub-form {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  width: 60%;
+}
+
 
 @media (max-width: 768px) {
   h1{
