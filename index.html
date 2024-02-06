@@ -194,23 +194,16 @@
                         voluptate?</p>
                 </div>
                 <div class="row right-r">
-                    <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
-
-                        <input type="hidden" name="access_key" value="df5df245-b760-465f-8f59-f53abaa77d98">
-
-                        <input type="text" name="name" required placeholder="your name" class="form-control">
-                        <input type="email" name="email" required placeholder="e-mail" class="form-control">
-                        <textarea name="message" required placeholder="tell me something"
-                            class="form-control msg"></textarea>
-                        <div class="sub-form">
-                            <div class="h-captcha" data-captcha="true"></div>
-                            <button type="submit" class="btn contact-btn btn-text">
-                                <span class="btn-text"> Submit</span>
-
-                            </button>
-                        </div>
-
-                    </form>
+                    <div class="container">
+                        <form name="contact" method="post" data-netlify="true">
+                          <input type="text" name="name" placeholder="Your Name" required>
+                          <input type="email" name="email" placeholder="Your Email" required>
+                          <input type="text" name="subject" placeholder="Subject" required>
+                          <textarea name="message" placeholder="Your Message" required></textarea>
+                          <button class="btn" type="submit">Send</button>
+                        </form>
+                      </div>
+                      
                 </div>
             </div>
             </div>
