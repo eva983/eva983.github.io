@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Sen&display=swap");
 
 * {
   margin: 0;
@@ -25,17 +25,18 @@ body.menu-open {
 footer {
   text-align: center;
   background-color: #9866f2;
-  width: 100%;
   padding: 10px;
 }
 
 .mobile {
   display: none !important;
 }
-.invert-filter{
-  filter: invert(1);
+.invert-filter {
+  filter: invert(1) !important;
 }
-
+.align-left {
+  text-align: left !important;
+}
 .navbar {
   padding: 20px;
   display: flex;
@@ -64,6 +65,12 @@ footer {
 .menu-icon {
   display: none;
   cursor: pointer;
+}
+.contanct-icon {
+  margin: 5px;
+}
+.contact-h {
+  display: inline-flex;
 }
 
 .menu-icon img {
@@ -345,14 +352,14 @@ h3 {
   flex-direction: column;
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
-  border-right: 1px solid grey;
+  /* border-right: 1px solid grey; */
 }
 .right-r {
   width: 50%;
   flex-direction: column;
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
-  border-left: 1px solid grey;
+  /* border-left: 1px solid grey; */
 }
 .row > p {
   padding: 10px;
@@ -394,6 +401,16 @@ i {
   display: flex;
   flex-direction: row;
 }
+.contact-icon {
+  margin: 5px;
+}
+
+.contact-text {
+  justify-content: flex-start;
+  padding-top: 10%;
+  /* text-align: left; */
+  align-items: flex-start;
+}
 #contact-form {
   display: flex;
   flex-direction: column;
@@ -401,7 +418,7 @@ i {
   row-gap: 15px;
   background-color: #a3a3a330;
   padding: 1.75rem;
-  width: 500px;
+  max-width: 500px;
   border-radius: 10px;
 }
 
@@ -444,17 +461,20 @@ i {
     width: 50px;
   }
   .about-box {
-    width: 90%;
+    width: 100%;
     font-size: 18px;
   }
   .table-row {
     display: flex;
     flex-direction: column;
     background-color: white;
-    width: 90%;
+    width: 100%;
     border-radius: 10px;
     box-shadow: 1px 1px 11px rgba(0, 0, 0, 0.3);
     color: black;
+  }
+  .contact-row {
+    flex-direction: column;
   }
   .row {
     width: 100%;
@@ -467,6 +487,12 @@ i {
     cursor: pointer;
     z-index: 2;
     font-size: 3rem;
+  }
+  .skills-icon {
+    width: 50px;
+  }
+  i {
+    font-size: 50px;
   }
   .logo-container {
     flex: 1;
@@ -521,5 +547,14 @@ i {
 
   .social-icons {
     display: none;
+  }
+  #contact-form {
+    width: auto;
+    margin: auto;
+    padding: 1.2rem;
+  }
+
+  .sub-form {
+    width: 100%;
   }
 }
