@@ -1,14 +1,14 @@
 
 function toggleMenu() {
   $('.nav-links').fadeToggle('fast');
-  $('body').removeClass('menu-open');
 
 }
 
 function closeMenu() {
   if ($(window).width() <= 768) {
       $('.nav-links').fadeOut('fast');
-      $('body').addClass('menu-open');
+      $('body').removeClass('menu-open');
+
   }
 }
   
