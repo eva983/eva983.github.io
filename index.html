@@ -195,12 +195,14 @@
                 </div>
                 <div class="row right-r">
                     <div class="container">
-                        <form name="contact" method="post" data-netlify="true" action="#">
+                        <form name="contact" method="post" data-netlify="true" action="#"
+                        data-netlify-recaptcha="true">
                             <input type="text" name="name" placeholder="Your Name" required>
                           <input type="email" name="email" placeholder="Your Email" required>
                           <input type="text" name="subject" placeholder="Subject" required>
                           <textarea name="message" placeholder="Your Message" required></textarea>
                           <button class="btn" type="submit">Send</button>
+                          <div data-netlify-recaptcha="true"></div>
                         </form>
                       </div>
                       
