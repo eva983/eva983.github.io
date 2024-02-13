@@ -9,6 +9,20 @@ function closeMenu() {
     $('body').removeClass('menu-open'); // Remove class to enable scrolling
   }
 }
+$(document).ready(function() {
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 20) {
+      $('#scrollToTopBtn').fadeIn();
+    } else {
+      $('#scrollToTopBtn').fadeOut();
+    }
+  });
+
+  $('#scrollToTopBtn').click(function() {
+    $('html, body').animate({scrollTop : 0}, 800);
+    return false;
+  });
+});
   
   class TextScramble {
     constructor(el) {
