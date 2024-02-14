@@ -156,6 +156,9 @@ h2 {
 h3 {
   font-size: 24px;
 }
+h4 {
+  font-size: 20px;
+}
 
 /* SECTIONS--------------------------------- */
 .section-cont {
@@ -296,10 +299,11 @@ h3 {
 
 .about-box {
   margin: auto;
-  width: 500px;
+  max-width: 500px;
   border: 2px solid black;
   font-size: 1.6rem;
   text-align: center;
+  padding:10px;
 }
 .table-row {
   display: flex;
@@ -407,8 +411,8 @@ i {
 
 .contact-text {
   justify-content: flex-start;
-  padding-top: 10%;
-  /* text-align: left; */
+  padding-top: 5%;
+    /* text-align: left; */
   align-items: flex-start;
 }
 /* #contact-form {
@@ -497,13 +501,16 @@ textarea {
 
 @media (max-width: 768px) {
   h1 {
-    font-size: 25px;
+    font-size: 27px;
+  }
+  h2 {
+    font-size: 24px;
   }
   h3 {
     font-size: 20px;
   }
-  .subtitle {
-    font-size: 20px;
+  .subtitle, p {
+    font-size: 18px;
   }
   .shape {
     width: 300px;
@@ -514,8 +521,8 @@ textarea {
     width: 50px;
   }
   .about-box {
-    width: 100%;
-    font-size: 18px;
+    width: 90%;
+    padding: 10px;
   }
   .table-row {
     display: flex;
