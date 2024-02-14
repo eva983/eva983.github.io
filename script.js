@@ -1,16 +1,28 @@
-
 function toggleMenu() {
   $('.nav-links').fadeToggle('fast');
-
+  $('body').toggleClass('menu-open'); // Toggle class to prevent scrolling
 }
 
 function closeMenu() {
   if ($(window).width() <= 768) {
-      $('.nav-links').fadeOut('fast');
-      $('body').removeClass('menu-open');
-
+    $('.nav-links').fadeOut('fast');
+    $('body').removeClass('menu-open'); // Remove class to enable scrolling
   }
 }
+$(document).ready(function() {
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 20) {
+      $('#scrollToTopBtn').fadeIn();
+    } else {
+      $('#scrollToTopBtn').fadeOut();
+    }
+  });
+
+  $('#scrollToTopBtn').click(function() {
+    $('html, body').animate({scrollTop : 0}, 800);
+    return false;
+  });
+});
   
   class TextScramble {
     constructor(el) {
