@@ -419,6 +419,7 @@ i {
   flex-direction: row;
   align-items: center;
   row-gap: 10px;
+  padding: 50px;
 }
 
 .contact-row {
